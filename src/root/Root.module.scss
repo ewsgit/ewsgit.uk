@@ -1,0 +1,16 @@
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background: linear-gradient(-45deg, #ff8093, #ffd264);
+  color: #000000;
+
+  .title {
+    font-size: 5rem;
+    line-height: 1;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}

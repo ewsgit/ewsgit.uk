@@ -1,0 +1,167 @@
+/*!
+ * Copyright ©2024 Ewsgit<https://github.com/ewsgit> and YourDash<https://github.com/yourdash> contributors.
+ * YourDash is licensed under the MIT License. (https://ewsgit.mit-license.org)
+ */
+
+@import "@yourdash/uikit/theme/themeValues";
+
+.navigationBar {
+  --side-spacing: 10rem;
+
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  .logo {
+    height: 2rem;
+    border-radius: 0;
+    padding-right: 0.25rem;
+  }
+
+  .title {
+    margin: 0 0 0 calc(var(#{$theme+$gap}) / 2 * -1);
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  .tld {
+    margin-top: auto;
+    margin-bottom: 0;
+    margin-left: -0.25rem;
+    opacity: 0.8;
+    font-size: 0.8rem;
+  }
+
+  .subtitle {
+    margin: 0 var(--side-spacing) 0 0;
+    width: 10ch;
+    text-align: left;
+    font-weight: 300;
+    letter-spacing: -0.1rem;
+
+    transition: 250ms ease-in-out;
+
+    @keyframes slideDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-100%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    &:not(:empty) {
+      animation: slideDown 0.5s ease-in-out forwards;
+    }
+  }
+
+  .link {
+    font-size: 1.1rem;
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+  }
+
+  .source {
+    @media (max-width: $sizeTablet) {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  @media (max-width: $sizeLargeTablet) {
+    --side-spacing: 5rem;
+  }
+
+  @media (max-width: $sizeLargeMobile) {
+    --side-spacing: 2.5rem;
+  }
+
+  @media (max-width: $sizeMobile) {
+    --side-spacing: 0;
+  }
+}
+
+.notice {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: calc(var(#{$theme+$padding}) / 2);
+  padding-bottom: calc(var(#{$theme+$padding}) / 2);
+}
+
+
+.footer {
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+
+
+  .brand {
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+      height: 2rem;
+      border-radius: 0;
+    }
+
+    .name {
+      margin: 0;
+    }
+
+    .socials {
+      gap: 0.5rem;
+      align-items: center;
+      justify-content: center;
+      margin-left: 10rem;
+
+      .icon {
+        background: transparent;
+        border: none;
+        padding: 0.25rem;
+        height: 2rem;
+
+        &:hover {
+          scale: 1.1;
+        }
+      }
+    }
+  }
+
+  .license {
+    margin-left: auto;
+    margin-right: auto;
+    gap: 0;
+
+    .dot {
+      border-radius: 100rem;
+      background-color: var(#{$theme+$separator+$color});
+      width: 0.125rem;
+      height: 1.5rem;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+  }
+}
