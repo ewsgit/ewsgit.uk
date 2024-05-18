@@ -49,3 +49,11 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+
+      - name: Push to published branch to deploy to "ewsgit.uk"
+        uses: moodiest/push-to-branch-action@develop
+        env:
+          REPO: self
+          BRANCH: published
+          FOLDER: ./dist/
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
