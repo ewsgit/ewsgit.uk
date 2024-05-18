@@ -1,8 +1,16 @@
 diff --git a/node_modules/@yourdash/uikit/components/image/image.tsx b/node_modules/@yourdash/uikit/components/image/image.tsx
-index 5195ce3..a8e17be 100644
+index 5195ce3..de7b01e 100644
 --- a/node_modules/@yourdash/uikit/components/image/image.tsx
 +++ b/node_modules/@yourdash/uikit/components/image/image.tsx
-@@ -11,13 +11,12 @@ const Image: FC<{
+@@ -3,7 +3,6 @@
+  * YourDash is licensed under the MIT License. (https://ewsgit.mit-license.org)
+  */
+ 
+-import csi from "@yourdash/csi/csi.js";
+ import styles from "./image.module.scss";
+ import { FC } from "react";
+ 
+@@ -11,13 +10,12 @@ const Image: FC<{
    src: string;
    accessibleLabel: string;
    className?: string;
