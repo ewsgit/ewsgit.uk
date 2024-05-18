@@ -4,9 +4,9 @@ import styles from "./Root.module.scss"
 
 const Root: FC = () => {
   return (
-      <div className={styles.page}>
-        <Heading className={styles.title} text={"Coming Soon..."} />
-      </div>
+    <div className={styles.page}>
+      <Heading className={styles.title} text={"Coming Soon..."} />
+    </div>
   )
 }
 
