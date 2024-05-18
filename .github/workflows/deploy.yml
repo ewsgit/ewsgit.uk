@@ -56,5 +56,5 @@ jobs:
         env:
           REPO: self
           BRANCH: published
-          FOLDER: ./dist/
+          FOLDER: /dist
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
