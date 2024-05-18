@@ -1,0 +1,53 @@
+.projectGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  .projectContainer {
+    flex-basis: content;
+    flex-grow: 0;
+    flex-shrink: 1;
+    height: max-content;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    .header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+
+      .logo {
+        height: 5rem;
+        width: 5rem;
+      }
+
+      .displayName {
+        line-height: 1;
+      }
+    }
+
+    .description {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+
+    .footer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: end;
+      gap: 1rem;
+    }
+  }
+}

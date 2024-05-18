@@ -1,0 +1,23 @@
+.component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: linear-gradient(-45deg, #ff8093, #ffd264);
+  color: #000000;
+  transition: all 500ms ease-in-out;
+
+  &.large {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  .title {
+    font-size: 5rem;
+    line-height: 1;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
