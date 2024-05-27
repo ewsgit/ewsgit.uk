@@ -48,11 +48,11 @@ const Navigation: FC<{ subtitle?: string }> = ({ subtitle }) => {
           }}
         />
         <TextButton
-            className={styles.link}
-            text={"About"}
-            onClick={() => {
-              navigate("/about");
-            }}
+          className={styles.link}
+          text={"About"}
+          onClick={() => {
+            navigate("/about");
+          }}
         />
         <TextButton
           className={styles.link}
@@ -60,7 +60,7 @@ const Navigation: FC<{ subtitle?: string }> = ({ subtitle }) => {
           onClick={() => {
             navigate("/projects");
           }}
-      />
+        />
       </Box>
       <Box
         level={1}
@@ -75,7 +75,7 @@ const Navigation: FC<{ subtitle?: string }> = ({ subtitle }) => {
           className={styles.license}
         >
           <Text text={"©2024 Ewsgit"} />
-          <div className={styles.dot}/>
+          <div className={styles.dot} />
           <Link
             to={"https://ewsgit.mit-license.org"}
             text={"Licensed under the MIT License"}
