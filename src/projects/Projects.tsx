@@ -77,7 +77,7 @@ const ProjectsPage: FC = () => {
             <Image className={styles.logo} src={project.iconUrl || "/plainLogo.png"} accessibleLabel="Project Icon"/>
             <Heading className={styles.displayName} level={2} text={project.displayName}/>
           </section>
-          <Text text={project.description}/>
+          <Text className={styles.description} text={project.description}/>
         </Card>
       })}
     </div>
