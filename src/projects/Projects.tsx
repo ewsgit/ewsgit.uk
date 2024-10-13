@@ -6,7 +6,6 @@ import Image from "@yourdash/uikit/components/image/image"
 import Heading from "@yourdash/uikit/components/heading/heading"
 import Text from "@yourdash/uikit/components/text/text"
 import Button from "@yourdash/uikit/components/button/button"
-import { useNavigate } from "react-router"
 
 const projects: {
   id: string,
@@ -24,6 +23,26 @@ const projects: {
       site: "https://yourdash.ewsgit.uk"
     },
     iconUrl: "/assets/projects/yourdash/icon.svg",
+  },
+  {
+    id: "ewsgituk",
+    displayName: "Ewsgit.uk",
+    description: "This website",
+    links: {
+      source: "https://github.com/ewsgit/ewsgit.uk",
+      site: "https://ewsgit.uk"
+    },
+    iconUrl: "/plainLogo.png",
+  },
+  {
+    id: "justlikemac",
+    displayName: "JustLikeMac",
+    description: "This project aims to make Linux & Windows feel and look like MacOS",
+    links: {
+      source: "https://github.com/justlikemac/justlikemac",
+      // site: "https://justlikemac.ewsgit.uk"
+    },
+    iconUrl: "/plainLogo.png",
   }
 ]
 
