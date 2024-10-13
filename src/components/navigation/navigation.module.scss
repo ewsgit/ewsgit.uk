@@ -26,14 +26,12 @@
     margin: 0 0 0 calc(var(#{$theme+$gap}) / 2 * -1);
     font-weight: 800;
     line-height: 1;
-  }
 
-  .tld {
-    margin-top: auto;
-    margin-bottom: 0;
-    margin-left: -0.25rem;
-    opacity: 0.8;
-    font-size: 0.8rem;
+    &::after {
+      content: ".uk";
+      opacity: 0.75;
+      font-size: 1rem;
+    }
   }
 
   .subtitle {
@@ -41,8 +39,9 @@
     width: 10ch;
     text-align: left;
     font-weight: 300;
+    font-size: var(#{$theme+$heading+$h2+$size});
+    line-height: 1;
     letter-spacing: -0.1rem;
-
     transition: 250ms ease-in-out;
 
     @keyframes slideDown {

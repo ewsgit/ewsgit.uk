@@ -31,11 +31,6 @@ const Navigation: FC<{ subtitle?: string }> = ({ subtitle }) => {
           text={"Ewsgit"}
         />
         <Heading
-          className={styles.tld}
-          level={4}
-          text={".uk"}
-        />
-        <Heading
           level={2}
           className={styles.subtitle}
           text={subtitle ? `/ ${subtitle}` : ""}

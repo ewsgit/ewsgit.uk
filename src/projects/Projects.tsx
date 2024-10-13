@@ -8,7 +8,13 @@ import Text from "@yourdash/uikit/components/text/text"
 import Button from "@yourdash/uikit/components/button/button"
 import { useNavigate } from "react-router"
 
-const projects: { id: string, displayName: string, description: string, links: { source?: string, site?: string, download?: string }, iconUrl?: string }[] = [
+const projects: {
+  id: string,
+  displayName: string,
+  description: string,
+  links: { source?: string, site?: string, download?: string },
+  iconUrl?: string
+}[] = [
   {
     id: "yourdash",
     displayName: "YourDash",
@@ -23,41 +29,39 @@ const projects: { id: string, displayName: string, description: string, links: {
 
 const ProjectsPage: FC = () => {
   return <>
-    <PageHeader title={"Projects"} />
+    <PageHeader title={"Projects"}/>
     <div className={styles.projectGrid}>
       {projects.map(project => {
-        return <Card className={styles.project} containerClassName={styles.projectContainer}>
-          <section className={styles.header}>
-            <Image className={styles.logo} src={project.iconUrl || "/plainLogo.png"} accessibleLabel="Project Icon" />
-            <Heading className={styles.displayName} level={2} text={project.displayName} />
-          </section>
-          <Text text={project.description} />
-          <section className={styles.footer}>
-            {project.links.site &&
+        return <Card className={styles.project} actionsClassName={styles.actions} actions={<>
+          {project.links.site &&
               <Button onClick={() => {
                 window.location.href = project.links.site || "/projects"
               }}
-                text={"Site"}
+                      text={"Site"}
               />
-            }
-            {project.links.source &&
+          }
+          {project.links.source &&
               <Button onClick={() => {
                 window.location.href = project.links.source || "/projects"
               }}
-                text={"Source"}
+                      text={"Source"}
               />
-            }
-            {project.links.download &&
+          }
+          {project.links.download &&
               <Button onClick={() => {
                 window.location.href = project.links.download || "/projects"
               }}
-                text={"Download"}
-              />
-            }
+                      text={"Download"}
+              />}
+        </>} containerClassName={styles.projectContainer}>
+          <section className={styles.header}>
+            <Image className={styles.logo} src={project.iconUrl || "/plainLogo.png"} accessibleLabel="Project Icon"/>
+            <Heading className={styles.displayName} level={2} text={project.displayName}/>
           </section>
+          <Text text={project.description}/>
         </Card>
       })}
-    </div >
+    </div>
   </>
 }
 

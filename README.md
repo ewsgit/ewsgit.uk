@@ -1,1 +1,3 @@
-# ewsgit.uk
+# Ewsgit.uk
+
+- my personal website

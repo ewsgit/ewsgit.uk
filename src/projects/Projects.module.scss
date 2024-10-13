@@ -41,13 +41,16 @@
       padding-left: 2.5rem;
       padding-right: 2.5rem;
     }
+  }
+}
 
-    .footer {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: end;
-      gap: 1rem;
-    }
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 0.5rem;
+
+  > button {
+    width: unset !important;
   }
 }
