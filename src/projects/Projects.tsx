@@ -25,6 +25,15 @@ const projects: {
     iconUrl: "/assets/projects/yourdash/icon.svg",
   },
   {
+    id: "char",
+    displayName: "Char",
+    description: "Create professional bots without code.",
+    links: {
+      site: "https://char.ewsgit.uk"
+    },
+    iconUrl: "https://char.ewsgit.uk/assets/char_logo_transparent.svg",
+  },
+  {
     id: "ewsgituk",
     displayName: "Ewsgit.uk",
     description: "This website",

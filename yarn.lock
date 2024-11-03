@@ -976,7 +976,7 @@
   resolved "https://registry.yarnpkg.com/@yarnpkg/lockfile/-/lockfile-1.1.0.tgz#e77a97fbd345b76d83245edcd17d393b1b41fb31"
   integrity sha512-GpSwvyXOcOOlV70vbnzjj4fW5xW/FdUF6nQEt1ENy7m4ZCczi1+/buVUPAqmGfqznsORNFzUMjctTIp8a9tuCQ==
 
-"@yourdash/shared@^1.0.0":
+"@yourdash/shared@^1.0.0", "@yourdash/shared@workspace:*":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@yourdash/shared/-/shared-1.0.0.tgz#7f0cb6ab6b35863ef76cb43cf2a3af0864ad99b0"
   integrity sha512-0nQ0NalDxJfpDvORUQ6VcoD1QELrGUSuHW5CCg+AUO3GWI6HWdDPRPO4FwvmUL2cRl8O9ZUm7W8p/uk9l062qg==
@@ -986,13 +986,14 @@
     react "^18.2.0"
     typescript "^5.0.2"
 
-"@yourdash/uikit@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@yourdash/uikit/-/uikit-1.0.2.tgz#63d2978b23fc72a1e6b168b9896d55f92a594642"
-  integrity sha512-b37CR3o+aZr7Y5WaGe44cmUqrTkDTGKwxRuEvvaxcOAzXa1OZvfp6elENKQNuyn8XVf+5yeaZcHwkrGwk1Dbsw==
+"@yourdash/uikit@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@yourdash/uikit/-/uikit-1.0.3.tgz#646cc727efe75e929d0c41aac45b07d07754527f"
+  integrity sha512-JHwiKKLI3UX7OwaW1lXAfnWI/AYw403LnIY0DTTHQuN8nRNuGEnB5EiZqGCySB3MQmd7k+UZ0GZ+PNrtqC3zow==
   dependencies:
     "@types/react" "^18.3.5"
     "@types/react-dom" "^18.3.0"
+    "@yourdash/shared" "workspace:*"
     react "^18.3.1"
     react-dom "^18.3.1"
     sass "^1.78.0"
