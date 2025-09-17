@@ -25,11 +25,7 @@ const Navigation: FC<{ subtitle?: string }> = ({ subtitle }) => {
           accessibleLabel={"Ewsgit"}
           className={styles.logo}
         />
-        <Heading
-          level={2}
-          className={styles.title}
-          text={"Ewsgit"}
-        />
+        <Heading level={2} className={styles.title} text={"Ewsgit"} />
         <Heading
           level={2}
           className={styles.subtitle}
@@ -57,19 +53,13 @@ const Navigation: FC<{ subtitle?: string }> = ({ subtitle }) => {
           }}
         />
       </Box>
-      <Box
-        level={1}
-        className={styles.notice}
-      >
-        <Text text={"This site is a work-in-progress... "} />
+      <Box level={1} className={styles.notice}>
+        <Text text={"This site was a work-in-progress... "} />
       </Box>
       <Outlet />
       <Box className={styles.footer}>
-        <Flex
-          direction={"row"}
-          className={styles.license}
-        >
-          <Text text={"©2024 Ewsgit"} />
+        <Flex direction={"row"} className={styles.license}>
+          <Text text={`©${new Date().getFullYear()} Ewsgit`} />
           <div className={styles.dot} />
           <Link
             to={"https://ewsgit.mit-license.org"}
